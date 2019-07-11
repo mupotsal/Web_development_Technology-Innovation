@@ -18,6 +18,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
+
     return render_template("index.html")
 
 # @app.route('/tuna') # You can create multiple pages but there is need of putting the decorator before.

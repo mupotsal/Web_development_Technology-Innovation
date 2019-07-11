@@ -9,24 +9,21 @@
           </button>
           <a class="navbar-brand" href="#">Technology Solutions</a>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/articles">Articles</a></li>
-          </ul>
+        <div>
+            <ul class="nav navbar.nav">
+              <li> <a href="/"> Home </a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/articles">Articles</a></li>
+              <li> <a href="/"> 'Computer_Scientist_Blogs' </a></li>
 
-          <ul class="nav navbar-nav navbar-right">
-            {% if session.logged_in %}
-              <li><a href="/dashboard">Dashboard</a></li>
-              <li><a href="/logout">Logout</a></li>
-            {% else %}
-              <li><a href="/register">Register</a></li>
-              <li><a href="/login">Login</a></li>
-            {% endif %}
+            <ul>
+              <li><a href="#home">Challenges in the field</a></li>
+              <li><a href="#news">Solutions</a></li>
+              <li><a href="#contact">New Discoveries</a></li>
+              <li><a href="#about">Resources</a></li>
+            </ul>
 
-          </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </nav>
 
