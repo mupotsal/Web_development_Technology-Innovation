@@ -16,10 +16,15 @@ app = Flask(__name__)
 
 # @ is the decorator , its a way to wrap a function and wrap its behavior
 
+
 @app.route('/')
 def index():
 
     return render_template("index.html")
+
+@app.route('/about')
+def about():
+    return render_template("about.html")
 
 # @app.route('/tuna') # You can create multiple pages but there is need of putting the decorator before.
 # def tuna():
