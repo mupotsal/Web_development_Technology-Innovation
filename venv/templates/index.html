@@ -3,5 +3,9 @@
   <div class="jumbotron text-center">
    <h1> Welcome to technology and Innovation </h1>
    <p class="lead"> This site is still under construction but its sole purpose is to link software engineers to problems to take the world to a better level</p>
+    {% if session.logged_in == NULL %}
+      <a href="/register" class="btn btn-primary">Register</a>
+      <a href="/login" class="btn btn.lg">Login</a>
+      {% endif %}
   </div>
 {% endblock %}
